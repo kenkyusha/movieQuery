@@ -40,7 +40,7 @@ class Vectorizer:
 	def extract_strings(self, df):
 		str_lst = []
 		for k in df.index:
-			pdb.set_trace()
+			# pdb.set_trace()
 			# Split the movie title strings from year and lower case them
 			str_lst.append(df['title'][k].split('(')[0].lower())
 		return str_lst
