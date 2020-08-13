@@ -76,9 +76,24 @@ if __name__ == "__main__":
     query_indexes(search_str, df)
     
     print('*'*50)
-    print('First query done!')
+    print('Query by similarity!')
     print('*'*50)
-    time.sleep(10)
+    # time.sleep(10)
     # Query our string using also the rating
     query_ranked(search_str, df, df2)
+    print('*'*50)
+    print('Query by similarity and rating!')
+    print('*'*50)
+
+    while True:
+        print('Enter a tile for search: , type q for quitting')
+        txt = [str(input())]
+
+        if txt[0] == 'q':
+            print('Exiting program')
+            sys.exit(1)
+        else:
+            query_ranked(txt, df, df2)
+            
+
     # print('All done, took: ', time.time()-start_time, ' seconds.')
