@@ -86,7 +86,7 @@ if __name__ == "__main__":
     print('*'*50)
 
     while True:
-        print('Enter a tile for search: , type q for quitting')
+        print('Enter a string for search: , type q for quitting')
         txt = [str(input())]
 
         if txt[0] == 'q':
